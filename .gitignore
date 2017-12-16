@@ -22,3 +22,8 @@
 *.pdfsync
 
 /.idea
+*.recover.bak~
+*.bbl
+*.bcf
+*.blg
+*.run.xml
