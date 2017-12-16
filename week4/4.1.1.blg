@@ -1,0 +1,29 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is '4.1.1.blg'
+[15] biber:313> INFO - === Tue Dec 12, 2017, 19:42:40
+[27] Biber.pm:371> INFO - Reading '4.1.1.bcf'
+[66] Biber.pm:857> INFO - Found 4 citekeys in bib section 0
+[74] Biber.pm:3981> INFO - Processing section 0
+[80] Biber.pm:4154> INFO - Looking for bibtex format file 'bib1.bib' for section 0
+[81] bibtex.pm:1479> INFO - LaTeX decoding ...
+[82] bibtex.pm:1305> INFO - Found BibTeX data source 'bib1.bib'
+[85] Biber.pm:4154> INFO - Looking for bibtex format file 'bib2.bib' for section 0
+[86] bibtex.pm:1479> INFO - LaTeX decoding ...
+[113] bibtex.pm:1305> INFO - Found BibTeX data source 'bib2.bib'
+[125] Utils.pm:169> WARN - BibTeX subsystem: /tmp/uWhJQQDLcM/bib2.bib_15140.utf8, line 75, warning: undefined macro "may"
+[125] Utils.pm:169> WARN - BibTeX subsystem: /tmp/uWhJQQDLcM/bib2.bib_15140.utf8, line 105, warning: undefined macro "jul"
+[125] Utils.pm:169> WARN - BibTeX subsystem: /tmp/uWhJQQDLcM/bib2.bib_15140.utf8, line 149, warning: undefined macro "sep"
+[125] Utils.pm:169> WARN - BibTeX subsystem: /tmp/uWhJQQDLcM/bib2.bib_15140.utf8, line 177, warning: undefined macro "may"
+[125] Utils.pm:169> WARN - BibTeX subsystem: /tmp/uWhJQQDLcM/bib2.bib_15140.utf8, line 192, warning: undefined macro "aug"
+[125] Utils.pm:169> WARN - BibTeX subsystem: /tmp/uWhJQQDLcM/bib2.bib_15140.utf8, line 213, warning: undefined macro "sep"
+[125] Utils.pm:169> WARN - BibTeX subsystem: /tmp/uWhJQQDLcM/bib2.bib_15140.utf8, line 228, warning: undefined macro "dec"
+[125] Utils.pm:169> WARN - BibTeX subsystem: /tmp/uWhJQQDLcM/bib2.bib_15140.utf8, line 243, warning: undefined macro "jun"
+[125] Utils.pm:169> WARN - BibTeX subsystem: /tmp/uWhJQQDLcM/bib2.bib_15140.utf8, line 287, warning: undefined macro "may"
+[125] Utils.pm:169> WARN - BibTeX subsystem: /tmp/uWhJQQDLcM/bib2.bib_15140.utf8, line 325, warning: undefined macro "may"
+[133] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[133] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[133] Biber.pm:3809> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'ru-RU'
+[133] Biber.pm:3815> INFO - No sort tailoring available for locale 'ru-RU'
+[139] bbl.pm:617> INFO - Writing '4.1.1.bbl' with encoding 'UTF-8'
+[141] bbl.pm:720> INFO - Output to 4.1.1.bbl
+[141] Biber.pm:110> INFO - WARNINGS: 10
