@@ -1,0 +1,29 @@
+\documentclass[a4paper,12pt]{article}
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{indentfirst}
+\frenchspacing
+
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm,amsbsy,mathtools} % AMS
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+
+\begin{document}
+
+\begin{multline}
+	b^{МНК}_2 = \frac{\sum\limits_{i=1}^{n} (p_i - \overline{p})(w_i - \overline{w})} {\sum\limits_{i=1}^{n}(w_i - \overline{w})^2} = 
+	\frac{\sum\limits_{i=1}^{n} ([\beta_1 + \beta_2 w_i + u_{pi}] - [\beta_1 + \beta_2 \overline{w} + \overline{u}_p])
+		 (w_i - \overline{w})}
+	{\sum\limits_{i=1}^{n}(w_i - \overline{w})^2} = \\
+	= \frac{\sum\limits_{i=1}^{n} (\beta_2(w_i - \overline{w})(w_i - \overline{w}) +
+	 (u_{pi} - \overline{u}_p)(w_i - \overline{w}))}
+	{\sum\limits_{i=1}^{n}(w_i - \overline{w})^2} =
+	\beta_2 + \frac{\sum\limits_{i=1}^{n} (u_{pi} - \overline{u}_p)(w_i - \overline{w})} {\sum\limits_{i=1}^{n}(w_i - \overline{w})^2}.  \tag{$\Upsilon$}
+\end{multline}
+
+\end{document}

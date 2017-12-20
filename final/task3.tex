@@ -1,0 +1,37 @@
+\documentclass[a4paper,12pt]{article}
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{indentfirst}
+\frenchspacing
+
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm,amsbsy,mathtools} % AMS
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+
+%%% Работа с картинками
+\usepackage{graphicx}  % Для вставки рисунков
+\graphicspath{{images/}{images2/}}  % папки с картинками
+\setlength\fboxsep{3pt} % Отступ рамки \fbox{} от рисунка
+\setlength\fboxrule{1pt} % Толщина линий рамки \fbox{}
+\usepackage{wrapfig} % Обтекание рисунков и таблиц текстом
+
+\usepackage{multicol} % Несколько колонок
+
+\begin{document}
+
+\begin{enumerate}
+	\begin{multicols}{2}
+		\item \includegraphics{hse.pdf}\\
+		\item \includegraphics[scale=2.5]{hse.pdf}\\
+		\item \includegraphics[height=3in]{hse.pdf}\\
+		\item \includegraphics[height=30mm,width=26mm]{hse.pdf}\\
+		\item \includegraphics[height=0.2\textheight]{hse.pdf}\\
+	\end{multicols}
+\end{enumerate}	
+		
+\end{document}
