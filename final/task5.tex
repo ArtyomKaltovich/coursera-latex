@@ -1,0 +1,36 @@
+\documentclass[a4paper,12pt]{article}
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{indentfirst}
+\frenchspacing
+
+\usepackage{tikz} % Работа с графикой
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+
+\usepgfplotslibrary{dateplot}
+\pgfplotsset{compat=1.8}
+
+\begin{document}
+
+\begin{tikzpicture}
+	\begin{axis}[date coordinates in=x, date ZERO=2015-10-01,
+		xticklabel=\day.\month.\year, xmin=2015-10-01, xmax=2015-12-31, xticklabel style={rotate=90},
+		ymin=33, ymax=54,
+		width=11.5cm, height=10cm,
+		legend cell align={left},
+		legend entries={Нефть Brent, Нефть WTI}]
+	\addplot [mark=none,  blue, ultra thick] table[x index=0,y index=2,col sep=comma] {oil_prices.csv}; 
+	\addplot [mark=none,  red, ultra thick] table[x index=0,y index=1,col sep=comma] {oil_prices.csv}; 
+	\end{axis}
+	\node[align=center,font=\bfseries, yshift=1.5em] (title) 
+		at (current bounding box.north)
+		{Динамика цен на нефть, USD/барель};
+\end{tikzpicture}
+
+\end{document}\documentclass{standalone}
